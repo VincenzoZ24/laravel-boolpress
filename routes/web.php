@@ -15,13 +15,11 @@ use Illuminate\Database\Schema\PostgresBuilder;
 |
 */
 
-// Route::get('/', function () {
-//     return view('guest.home');
-// })->name('home');
+
 
 Auth::routes();
 
-// Route::get('/home', 'Admin\HomeController@index')->name('admin.home');
+
 
 Route::middleware('auth')
     ->namespace('Admin')
